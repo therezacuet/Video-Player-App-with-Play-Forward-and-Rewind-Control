@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_buffer_toast_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    android:background="@color/colorPrimaryDark">
+    <ProgressBar
+        android:id="@+id/pb_loader"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@android:color/white"
+        android:layout_marginRight="7dp"/>
+    <TextView
+        android:layout_toRightOf="@+id/pb_loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buffering.."
+        android:textColor="@android:color/white"/>
+</LinearLayout>
